@@ -1,0 +1,58 @@
+To install a .deb file, simply double click on it, and then select Install Package
+
+Alternatively, you can also install a .deb file by opening a terminal and typing:
+
+sudo dpkg -i package_file.deb
+To uninstall a .deb file, deselect it in your package manager, or type:
+
+sudo dpkg -r package_name
+
+Show the List of Installed Packages on Ubuntu or Debian
+While working on the instructions for compiling MonoDevelop from source, I relied heavily on the dpkg and apt-cache commands to tell me what was already installed vs what packages were available in the repository. After completing that article it occurred to me that I should explain how to show what packages are currently installed… so here we are.
+
+The command we need to use is dpkg –get-selections, which will give us a list of all the currently installed packages.
+
+$ dpkg --get-selections
+adduser                                         install
+alsa-base                                       install
+alsa-utils                                      install
+apache2                                         install
+apache2-mpm-prefork                             install
+apache2-utils                                   install
+apache2.2-common                                install
+apt                                             install
+apt-utils                                       install
+The full list can be long and unwieldy, so it’s much easier to filter through grep to get results for the exact package you need. For instance, I wanted to see which php packages I had already installed through apt-get:
+
+dpkg --get-selections | grep php
+libapache2-mod-php5                             install
+php-db                                          install
+php-pear                                        install
+php-sqlite3                                     install
+php5                                            install
+php5-cli                                        install
+php5-common                                     install
+php5-gd                                         install
+php5-memcache                                   install
+php5-mysql                                      install
+php5-sqlite                                     install
+php5-sqlite3                                    install
+php5-xsl                                        install
+For extra credit, you can find the locations of the files within a package from the list by using the dpkg -L command, such as:
+
+dpkg -L php5-gd
+/.
+/usr
+/usr/lib
+/usr/lib/php5
+/usr/lib/php5/20060613
+/usr/lib/php5/20060613/gd.so
+/usr/share
+/usr/share/doc
+/etc
+/etc/php5
+/etc/php5/conf.d
+/etc/php5/conf.d/gd.ini
+/usr/share/doc/php5-gd
+Now I can take a look at the gd.ini file and change some settings around…
+

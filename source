@@ -1,0 +1,3 @@
+set是用来定义私有变量的，set today=1  ,对应unset 撤销变量
+export是将私有导为系统全局变量 export today  ，导出后其他shell就可以使用today变量了
+source是启动一个程序或she

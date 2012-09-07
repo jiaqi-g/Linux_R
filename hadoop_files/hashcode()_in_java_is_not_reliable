@@ -1,0 +1,8 @@
+
+The input file is read twice due to the "hidden file in the directory" !!!!!!
+
+do not use special number in the input file... eg. use num 0 to represent special case
+actually we should use "*" instead.
+
+the large dataset may be imperfect. eg. there will be outsource nodes which does not goto any other nodes.
+just consider this situation

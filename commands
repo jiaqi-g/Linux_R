@@ -1,0 +1,16 @@
+
+hadoop, hadoop-create-user.sh, hadoop-daemon.sh, hadoop-daemons.sh, hadoop-setup-applications.sh, hadoop-setup-conf.sh, hadoop-setup-hdfs.sh, hadoop-setup-single-node.sh, hadoop-validate-setup.sh, rcc, slaves.sh, start-all.sh, start-balancer.sh, start-dfs.sh, start-jobhistoryserver.sh, start-mapred.sh, stop-all.sh, stop-balancer.sh, stop-dfs.sh, stop-jobhistoryserver.sh, stop-mapred.sh, task-controller, update-hadoop-env.sh
+
+victor@victor-PowerEdge-T110-II:/etc/profile.d$ ls
+bash_completion.sh  hadoop-env.sh
+victor@victor-PowerEdge-T110-II:/etc/profile.d$ sudo gedit bash_completion.sh 
+victor@victor-PowerEdge-T110-II:/etc/profile.d$ sudo gedit hadoop-env.sh 
+
+cd ..
+cd usr
+cd share/
+cd hadoop/
+
+hadoop jar /usr/share/hadoop/hadoop-examples-*.jar wordcount
+
+

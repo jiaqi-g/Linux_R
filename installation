@@ -1,0 +1,8 @@
+R CMD INSTALL 'package filename'
+
+install.packages("Rcpp")
+"RJSONIO" "itertools" "digest"
+
+Sys.setenv(JAVA_HOME='/usr/lib/jvm/java-6-sun')
+
+~/.bashrc

@@ -1,0 +1,15 @@
+http://cran.stat.ucla.edu/
+
+deb http://cran.stat.ucla.edu/bin/linux/ubuntu precise/
+
+deb http://<my.favorite.cran.mirror>/bin/linux/ubuntu oneiric/
+
+deb http://<my.favorite.cran.mirror>/bin/linux/ubuntu natty/
+
+deb http://<my.favorite.cran.mirror>/bin/linux/ubuntu lucid/
+
+deb http://<my.favorite.cran.mirror>/bin/linux/ubuntu hardy/
+
+导入library
+
+library("rmr")

@@ -1,0 +1,49 @@
+
+
+1
+bubba <- c(3,5,7,9) 
+tree <- read.csv(file="trees91.csv",header=TRUE,sep=",")
+names(tree)
+tree$C
+help(read.fwf)
+attributes(tree)
+
+
+2
+a <- 3
+a <- sqrt(a*a+3)
+ls()
+a <- c(1,2,3,4,5)
+var(a)
+mean(a)
+tree$C <- factor(tree$C)
+levels(tree$C)
+
+
+3
+a <- c(1,2,3,4)
+b <- c(2,4,6,8)
+levels <- factor(c("A","B","A","B"))
+bubba <- data.frame(first=a, second=b, f=levels)
+组合数据
+
+
+4
+dnorm
+pnorm
+rnorm
+
+
+5
+hist(w1$vals)
+boxplot(w1)
+plot(tree$STBM,tree$LFBM,
+       main="Relationship Between Stem and Leaf Biomass",
+       xlab="Stem Biomass",
+       ylab="Leaf Biomass")
+qqnorm(w1$vals,
+         main="Normal Q-Q Plot of the Leaf Biomass",
+	 xlab="Theoretical Quantiles of the Leaf Biomass",
+	 ylab="Sample Quantiles of the Leaf Biomass")
+qqline(w1$vals)
+

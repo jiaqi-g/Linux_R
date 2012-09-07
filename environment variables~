@@ -1,0 +1,17 @@
+/etc/environment
+
+sudo gedit /etc/environment
+
+must restart computer to enable the changes!
+
+export 命令
+locate 命令
+sudo updatedb 更新locate索引 防止找不到文件
+
+出现shared library 异常时 要注意
+编译时 加入 $LD_LIBRARY_PATH  (缺失的 .so 文件的位置)
+export LD_LIBRARY_PATH=/usr/local/lib
+
+export LD_LIBRARY_PATH=/usr/lib/jvm/java-7-oracle/jre/lib/i386/client
+
+export HADOOP_HOME=/home/victor/hadoop-1.0.3/hadoop-1.0.3
